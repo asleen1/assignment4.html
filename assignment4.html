@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centennial College CE Course Evaluation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .navbar-brand img {
+            width: 150px;
+        }
+
+        .hide-scrollbar {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .form-check-input:checked {
+            background-color: #4CAF50;
+        }
+
+        .form-check-input:focus {
+            box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+        }
+
+        a.feedback-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout adjustments */
+        .container {
+            padding: 0;
+        }
+
+        .evaluation-form {
+            margin: 0 1rem;
+        }
+
+        .form-group h5 {
+             height: auto;
+             width: auto;
+             display: inline;
+             margin-top: 1.5rem;
+             margin-bottom: 0.5rem;
+           
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+        body{
+            background-color:LightGray;
+            
+        } 
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.centennialcollege.ca/">
+                <img src="centennial_college_logo.png" alt="Centennial College Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluation.html">Course Evaluation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mb-5">Centennial College Continuing Education Course/Instructor Evaluation</h1>
+            </div>
+            <div class="col-12 evaluate-form-container">
+                <form class="evaluation-form">
+                    <!-- Add more form elements here -->
+                    <div class="form-group">
+                        <h5>Course Name/Code:</h5>
+                        <input type="text" class="form-control" id="courseName" placeholder="Course Name/Code">
+                    </div>
+                    <div class="form-group">
+                        <h5>Semester:</h5>
+                    </div>
+
+
+
+                    <div class="col-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-fall"
+                                value="fall">
+                            <label class="form-check-label" for="semester-fall">Fall</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-winter"
+                                value="winter">
+                            <label class="form-check-label" for="semester-winter">Winter</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                                value="summer">
+                            <label class="form-check-label" for="semester-summer">Summer</label>
+                        </div>
+
+
+
+
+                        <h5>Year:</h5>
+                    </div>
+                    <input type="text" class="form-control" id="courseName" placeholder="year">
+                        
+                         
+                     <a href="mailto:your_email@example.com"> Email</a>
+                     <input type="text" class="form-control" id="email" placeholder="email">
+                          
+                   
+
+
+
+                    <h5>Instructor:</h5>
+                    <input type="text" class="form-control" id="courseName" placeholder="">
+
+
+
+
+                <h5>How would you rate the instructor's</h5>
+               <h5> 1.Knowledge of a subject?  </h5>
+                <div class="col-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="semester-fall"
+                        value="fall">
+                        <label class="form-check-label" for="semester-fall">Excellent</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="semester-winter"
+                        value="winter">
+                        <label class="form-check-label" for="semester-winter">Good</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                        value="summer">
+                        <label class="form-check-label" for="semester-summer">Fair</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                        value="summer">
+                        <label class="form-check-label" for="semester-summer">Not Satisfactory</label>
+                    </div>
+                </div>
+
+
+                <h5>2.Helpfullness?</h5>
+
+                <div class="col-8">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="excellent"
+                            value="excellent">
+                        <label class="form-check-label" for="semester-fall">Excellent</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="good"
+                            value="good">
+                        <label class="form-check-label" for="semester-winter">Good</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="fair"
+                            value="fair">
+                        <label class="form-check-label" for="semester-summer">Fair</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="semester" id="not satisfactory"
+                            value="not satisfactory">
+                        <label class="form-check-label" for="semester-summer">Not Satisfactory</label>
+                    </div>
+                </div>
+
+
+                    <h5>3.Courtesy and respect for all students?</h5>
+                    <div class="col-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-fall"
+                                value="fall">
+                            <label class="form-check-label" for="semester-fall">Excellent</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-winter"
+                                value="winter">
+                            <label class="form-check-label" for="semester-winter">Good</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                                value="fair">
+                            <label class="form-check-label" for="semester-summer">Fair</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                                value="summer">
+                            <label class="form-check-label" for="semester-summer">Not Satisfactory</label>
+                        </div>
+                    </div>
+
+
+                    <h5>4.Communication?</h5>
+                        
+                        <div class="col-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="semester-fall"
+                                    value="fall">
+                                <label class="form-check-label" for="semester-fall">Excellent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="semester-winter"
+                                    value="winter">
+                                <label class="form-check-label" for="semester-winter">Good</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                                    value="summer">
+                                <label class="form-check-label" for="semester-summer">Fair</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="semester-summer"
+                                    value="summer">
+                                <label class="form-check-label" for="semester-summer">Not Satisfactory</label>
+                            </div>
+                        </div>
+                           
+
+
+                    <h5>5.Overall performance?</h5>
+
+                        <div class="col-8">
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="semester" id="overall performance"
+                                        value="excellent">
+                                    <label class="form-check-label" for="overall performane">Excellent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="semester" id="overall performance"
+                                        value="good">
+                                    <label class="form-check-label" for="overall performance">Good</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="semester" id="overall performance"
+                                        value="fair">
+                                    <label class="form-check-label" for="overall performance">Fair</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="semester" id="overall performance"
+                                        value="not satisfactory">
+                                    <label class="form-check-label" for="overall performance">Not Satisfactory</label>
+                            </div>
+
+
+                    <div class="form-group">
+                            <h5>Course :</h5>
+                            <input type="text" class="form-control" id="courseName" placeholder="Course">
+                                    
+                    </div>
+
+
+
+                    
+                    <h5>6. How would you rate the course materials?</h5>
+                    
+                        <div class="col-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="course material"
+                                value="excellent">
+                                <label class="form-check-label" for="semester-fall">Excellent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="course material"
+                                value="good">
+                                <label class="form-check-label" for="semester-winter">Good</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="course material" id="course material"
+                                value="fair">
+                                <label class="form-check-label" for="course material">Fair</label>
+                            </div>
+                             <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="semester" id="course material"
+                                value="not satisfactory">
+                                <label class="form-check-label" for="course material">Not Satisfactory</label>
+                            </div>
+                        </div>
+                    
+
+
+
+                    
+                    <h5>7.How much did this course match your expectations?</h5>
+                    
+                        <div class="col-8">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="knowledge" id="knowledge-excellent" value="a">
+                                <label class="form-check-label" for="knowledge-excellent">Excellent</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="knowledge" id="knowledge-good" value="b">
+                                 <label class="form-check-label" for="knowledge-good">Good</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="knowledge" id="knowledge-fair" value="c">
+                                 <label class="form-check-label" for="knowledge-fair">Fair</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="knowledge" id="knowledge-not-satisfactory" value="d">
+                                 <label class="form-check-label" for="knowledge-not-satisfactory">Not Satisfactory</label>
+                            </div>
+                        </div>
+
+
+
+
+                    <h5>8.How would you rate this course (overall)?</h5>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="knowledge" id="knowledge-excellent" value="a">
+                            <label class="form-check-label" for="knowledge-excellent">Excellent</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="knowledge" id="knowledge-good" value="b">
+                            <label class="form-check-label" for="knowledge-good">Good</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="knowledge" id="knowledge-fair" value="c">
+                            <label class="form-check-label" for="knowledge-fair">Fair</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="knowledge" id="knowledge-not-satisfactory" value="d">
+                            <label class="form-check-label" for="knowledge-not-satisfactory">Not Satisfactory</label>
+                        </div>
+
+
+                    <h5>general information:</h5>
+                        <div class="form-check form-check-inline">
+                            <input type="text" class="form-control" id="courseName" placeholder="information">
+                        </div>
+                    <div class="form-group">
+                        <h5>9.was the course outline explained at the beggining of your course?</h5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-excellent" value="a">
+                        <label class="form-check-label" for="knowledge-excellent">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-good" value="b">
+                        <label class="form-check-label" for="knowledge-good">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-fair" value="c">
+                        <label class="form-check-label" for="knowledge-fair">Not sure</label>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <h5>10.Would you recommend this course to a friend with the same interests?</h5>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-excellent" value="a">
+                        <label class="form-check-label" for="knowledge-excellent">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-good" value="b">
+                        <label class="form-check-label" for="knowledge-good">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="knowledge" id="knowledge-fair" value="c">
+                        <label class="form-check-label" for="knowledge-fair">Not sure</label>
+                    </div>
+                    
+
+                      <div class="form-group">
+                        <h5>Any other comments(please use the back of the computer card or this paper if necessary):</h5>
+                        <input type="text" class="form-control" id="comments" placeholder="comments">
+                                
+                </div>
+
+                    
+                <div class="form-group">
+                    <h5>11.What is the best thing about this course?</h5>
+                    <input type="text" class="form-control" id="about college" placeholder="best thing">
+                            
+            </div>
+
+
+            <div class="form-group">
+                <h5>11.What is the best thing about this college:</h5>
+                <input type="text" class="form-control" id="about college" placeholder="about college">
+                        
+        </div>
+
+
+
+        <div class="form-group">
+            <h5>13. Other:</h5>
+            <input type="text" class="form-control" id="other" placeholder="other comments">
+                    
+         </div>
+
+                 
+              <!-- Submit button -->
+            <button type="submit">Submit</button>
+
+            <h5>Thankyou! we pay attention to your feedback</h5>
+
+
+
+
+
+        </body>
+ </html>
+
+
+
